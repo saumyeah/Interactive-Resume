@@ -1,0 +1,101 @@
+/* Reset & box-sizing */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper for centering & background */
+.login-page-bg {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #000000, #090101);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif; /* Changed here */
+  color: #fff;
+}
+
+/* Container */
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem 3rem;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  margin: 0 12px;
+}
+
+/* Heading */
+.login-container h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.login-container input::placeholder {
+  color: #e0e0e0;
+}
+
+.login-container input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #b3a8a8;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-container button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Error messages */
+.error-message {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .login-container {
+    padding: 1.5rem 1rem;
+    max-width: 98vw;
+    margin: 0 auto;
+  }
+}

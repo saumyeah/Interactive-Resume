@@ -1,0 +1,28 @@
+{
+  "personalInfo": {
+    "name": "Saumya Singh",
+    "title": "Frontend Developer | AI & ML Enthusiast",
+    "email": "saumya@example.com",
+    "location": "Dehradun, India"
+  },
+  "summary": "Passionate Computer Science student building responsive web apps and exploring ML-powered UX.",
+  "skills": ["React","JavaScript","HTML","CSS","Python","Machine Learning","NLP","Git"],
+  "workExperience": [
+    {
+      "id": 1,
+      "role": "Frontend Intern",
+      "company": "Algokart",
+      "date": "Nov 2025 – Present",
+      "details": "Building responsive web interfaces using React, improving load performance and accessibility.",
+      "skills": ["React","JavaScript","CSS"]
+    },
+    {
+      "id": 2,
+      "role": "AI/ML Developer",
+      "company": "Sentiment Stock Analyzer (Project)",
+      "date": "Aug 2024 – Oct 2024",
+      "details": "Created an NLP model to extract sentiment from financial news and visualized results in dashboards.",
+      "skills": ["Python","Machine Learning","NLP"]
+    }
+  ]
+}
