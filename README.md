@@ -1,20 +1,58 @@
-<<<<<<< HEAD
-# React + Vite
+# Interactive Resume Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a dynamic, interactive resume page built with React and Vite. It allows users to filter projects by skill, search for keywords, and view work experience.
 
-Currently, two official plugins are available:
+**Live URL:** **[https://saumyeah.github.io/Interactive-Resume](https://saumyeah.github.io/Interactive-Resume)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+###  Tech Stack & Decisions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Intearctive-Resume
->>>>>>> aa15d03bed046a9d81d56878f3160229a749626f
+* **Framework:** React (with Vite)
+* **Styling:** Plain CSS (with a "glassmorphism" / gradient design)
+* **Data:** `resume.json` - All resume data is loaded from a local JSON file, making it easy to update without touching the code.
+* **Deployment:** GitHub Pages (using the `gh-pages` package to auto-build and deploy from the `dist` folder).
+
+---
+
+###  Setup & Run Instructions
+
+To run this project locally on your own machine:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/saumyeah/Interactive-Resume.git](https://github.com/saumyeah/Interactive-Resume.git)
+    ```
+2.  **Navigate to the project folder:**
+    ```bash
+    cd Interactive-Resume
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Run the local development server:**
+    ```bash
+    npm run dev
+    ```
+5.  Open [http://localhost:5173](http://localhost:5173) (or the URL shown in your terminal) in your browser.
+
+---
+
+###  Hardcoded Credentials
+
+* **None.** This project is self-contained and does not require any API keys or external service credentials to run.
+
+---
+
+###  Known Trade-offs & Future Work
+
+What I would do "if I had more time":
+
+* **Trade-off:** The "Download PDF" button currently uses `window.print()`. This works, but the styling for printing (`@media print`) can be tricky to perfect.
+* **Future Work:**
+    * I would replace the print method with a library like `html2pdf.js` to generate a perfect, pixel-controlled PDF directly from a component.
+    * Add a "View" toggle to switch between the current list view and a more visual "card" view for projects.
+    * Animate the skill filters and project list for a smoother user experience.
